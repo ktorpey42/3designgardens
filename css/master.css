@@ -96,7 +96,7 @@ margin: auto;
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
-    top: 4em;
+    top: 2em;
   }
   .topnav.responsive a {
     float: none;
@@ -206,6 +206,10 @@ h1, h2 {
 	font-size: 2em;
 	
 }
+  
+ 
+  
+  
   
 }
 
