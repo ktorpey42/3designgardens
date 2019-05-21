@@ -11,11 +11,12 @@ margin: auto;
 /* Add a black background color to the top navigation */
 .topnav {
   margin-top: 1em;
-  background-color: #333;
+  background-color: rgba(254,161,0,1.0);
   overflow: hidden;
   position: fixed;
-  opacity: 0.7;
+  opacity: 1.0;
   width:96%;
+  z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
@@ -35,8 +36,8 @@ margin: auto;
 
 .topnav a img{
   
- margin-top: -1em;
-  padding-top: -1em;
+    margin-top: -1em;
+
   margin-bottom: -1.5em;
   padding-left: 1em;
   margin-left: -2em;
@@ -45,16 +46,17 @@ margin: auto;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .topnav a:hover {
+        background-color: #ddd;
+        color: rgba(254,161,0,1.0);
+    }
+
 /* Change the color of image links on hover */
 
-.topnav a img:hover {
-  background-color: #333;
-  color: black;
-}
+    .topnav a img:hover {
+        background-color: #ddd;
+        color: rgba(254,161,0,1.0);
+    }
 
 /* Add an active class to highlight the current page */
 .active {
@@ -109,11 +111,16 @@ margin: auto;
   
 }
 
+h1 {
+    padding: .5em;
+    font-size: 3em;
+    text-align: center;
+}
 
-h1, h2 {
+h2 {
 	padding: .5em;
 	font-size: 3em;
-	text-align: center;
+	text-align: left;
 	
 }
 
@@ -125,7 +132,7 @@ h1, h2 {
 
 
 .image {
-		
+
 	/*width: 100%;*/
 	
 
@@ -136,7 +143,7 @@ h1, h2 {
 
 .bg-img {
   /* The image used */
-  background-image: url(../images/background1c.jpg);
+  background-image: url(../images/background99.jpg);
   width: 100%;
  height: 100em;
 
@@ -153,11 +160,48 @@ h1, h2 {
 
 /* Background image */
 
-.news-img {
+.bg-news {
+    /* The image used */
+    background-image: url(../images/pressnew1.jpg);
+    width: 100%;
+    height: 100em;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/*News page*/
+
+.newsgrid {
+    display: grid;
+
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    border: .1em;
+}
+    .newsgrid > div {
+        background: #444;
+        border: .1em solid;
+        margin: auto;
+        box-shadow: .4em .4em grey;
+    }
+
+    .newsgrid p {
+        font-size: 2em;
+        color: white;
+
+    }
+
+
+ /*.news-img {
   /* The image used for news page */
   background-image: url(../images/pressnew.jpg);
   width: 100%;
-   height: 118em;
+  min-height: 110em;
+   height: auto;
    
   
 
@@ -170,6 +214,9 @@ h1, h2 {
   
   
 }
+*/
+
+
 
 .news-img h1 {
 	color: white;
@@ -191,6 +238,11 @@ h1, h2 {
 	
 	font-size: .8em;
 }
+
+.hidden {
+    display: none;
+}
+
 .box {
   background-color: #444;
   color: #fff;
@@ -200,6 +252,11 @@ h1, h2 {
 }
 
 @media only screen and (max-width: 1024px) {
+
+
+
+    
+    /*
  .wrapper {
   display: grid;
   grid-gap: 0em;
@@ -208,15 +265,30 @@ h1, h2 {
   
   
 }
+     */
+
+    .wrapper {
+        display: none;
+    }
 
 .container p {
 	font-size: 2em;
 	
 }
-  
- 
-  
-  
+
+    .hidden {
+        display: block;
+        margin-top: .5em;
+        color:#fff;
+        background-color:#444;
+    }
+
+    .newsgrid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+    }
   
 }
 
@@ -256,8 +328,20 @@ box-shadow: .4em .4em grey;
   background-image: url(../images/background1b.jpg);
   width: 100%;
   height: 50em;
-  
+
 }
+
+   .bg-news {
+        /* The image used */
+        background-image: url(../images/pressnewtext.jpg);
+        width: auto;
+        height: 50em;
+
+        /* Center and scale the image nicely */
+
+    }
+
+
   
 }
 /* Design process page*/
@@ -305,6 +389,51 @@ box-shadow: .4em .4em grey;
 box-shadow: .4em .4em grey;
 }
 
+/* New image slider code  where img class is .image1*/
+
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.image1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0; 
+
+    transition: .5s ease;
+}
+
+.container1:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.bottom-left {
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    bottom: 3em;
+    left: 1em;
+}
+
+
+/* New image slider code  where img class is .image1* end/
+
+
+/* Old code for portfolio images where clas is .contain
 .contain {
   position: relative;
   z-index: -1;
@@ -318,6 +447,8 @@ box-shadow: .4em .4em grey;
   bottom: 1em;
   left: 1em;
 }
+
+    */
 
 /* Code for contact form on contact.html */
 
@@ -520,14 +651,20 @@ footer p {
 	margin-bottom: 1em;
 }
 
+
 .end1 h2 {
-	margin-top: -1.5em;
+    margin-top: -.5em;
+
+}
+/*
+.end1 h2 {
+
 	color: #f2f2f2;
 	font-weight: bold;
 	font-size: 1.5em;
 	margin-bottom: 2em;
 }
-
+    */
 
 .end h5{
 	
@@ -621,9 +758,9 @@ footer p {
 
 .process h3, h4, h5{
 	color: black;
-	padding: 1em;
+    padding: .5em;
 	font-size: 3em;
-	text-align: center;
+	text-align: left;
 	
 }
 
@@ -752,9 +889,16 @@ hr {
 }
 
 
-  
-  
-}
+    @media only screen and (max-width: 768px) {
+
+
+        .bg-img {
+            /* The image used */
+            background-image: url(../images/background1z.jpg);
+            width: 100%;
+            height: 50em;
+        }
+    }
 
 @media only screen and (max-width: 500px) {
 	
