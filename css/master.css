@@ -582,6 +582,8 @@ footer p {
 
 /* Facebook styles */
 
+
+
 .fab {
   padding: .7em;
   font-size: 1.5em;
@@ -607,7 +609,7 @@ footer p {
   border-radius: 50%;
 }
 
-.fa-google-plus {
+.fa-behance-square {
   background: #dd4b39;
   color: white;
   border-radius: 50%;
