@@ -36,7 +36,7 @@ margin: auto;
 
 .topnav a img{
   
-    margin-top: -1.2em;
+    margin-top: -1.3em;
 
   margin-bottom: -1.5em;
   padding-left: 1em;
@@ -104,7 +104,7 @@ h2 {
 
 .bg-img {
   /* The image used */
-  background-image: url(../images/background99.jpg);
+  background-image: url(../images/background1xlogo.jpg);
   width: 100%;
  height: 100em;
 
@@ -824,7 +824,7 @@ hr {
 
     .bg-img {
         /* The image used */
-        background-image: url(../images/background1b.jpg);
+        background-image: url(../images/background1xlow.jpg);
         width: 100%;
         height: 50em;
     }
@@ -860,26 +860,28 @@ hr {
  
  }
  */
+ 
+ /*
     .process img {
         display: none;
     }
-
+*/
     .brief {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     .design {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
 
     .planting {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
-
+	
     .portwrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -893,7 +895,7 @@ hr {
 
     .bg-img {
         /* The image used */
-        background-image: url(../images/background1z.jpg);
+        background-image: url(../images/background1xlow.jpg);
         width: 100%;
         height: 50em;
     }
@@ -912,7 +914,7 @@ hr {
 
     .bg-img {
         /* The image used */
-        background-image: url(../images/pinklast.jpg);
+        background-image: url(../images/background1xlow.jpg);
         width: 100%;
         height: 50em;
 
