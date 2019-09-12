@@ -4,7 +4,9 @@ width: 96%;
 margin: auto;
 }
 
-
+* {
+  box-sizing: border-box;
+}
 
 
 
@@ -928,11 +930,11 @@ body, html {
 	   background-image: url(../images/background1xlow.jpg);
 	   width: auto;
         height: 100%;
-        /* Center and scale the image nicely 
+        /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  */
+  
     }
 	
 	
@@ -970,10 +972,10 @@ body, html {
 	   background-image: url(../images/background1xlow.jpg);
 	   width: auto;
         height: 100%;
-        /* Center and scale the image nicely 
+        /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  */
+ 
     }
 }
