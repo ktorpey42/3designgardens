@@ -94,6 +94,24 @@ h2 {
 	padding-bottom: 1em;
 }
 
+.container a {
+ 
+  display: block;
+  color: rgba(254,161,0,1.0);
+  text-align: center;
+  margin-top: .2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: .2em;
+ 
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.container a:hover {
+        background-color: #ddd;
+        color: rgba(254,161,0,1.0);
+    }
 
 .image {
 
