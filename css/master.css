@@ -598,7 +598,7 @@ footer p {
 
 
 .fab {
-  padding: .7em;
+  padding: 1em;
   font-size: 1.5em;
   
   text-align: center;
@@ -613,7 +613,8 @@ footer p {
 .fa-facebook-f  {
   background: #3B5998;
   color: white;
-  border-radius: 50%;
+  
+  
 }
 
 .fa-twitter {
