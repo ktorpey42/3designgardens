@@ -71,10 +71,18 @@ margin: auto;
 .topnav .icon {
   display: none;
 }
+/*
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('../images/blankback.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
 
-
-
-
+*/
 h1 {
     padding: .5em;
     font-size: 3em;
@@ -135,11 +143,37 @@ h2 {
 
 .bg-img {
   /* The image used */
-  background-image: url(../images/background1xlogo.jpg);
+  background-image: url(../images/blankback.jpg);
   width: 100%;
- height: 100em;
+  height: 80em;
+}
 
+.vertical-center {
+	
+  padding-top: 8rem;
+  vertical-align: middle;
+}
 
+.vertical-center h2 {
+    font-family: Catamaran;
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.vertical-center h1 {
+    font-family: Catamaran;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 100;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -439,8 +473,10 @@ input[type=submit]:hover {
 
 
 footer {
-	margin-top: 1em;
-	background: #333333;
+	
+	margin-bottom: 1em;
+	background-color: rgba(254,161,0,1.0);
+	height: 4em;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 1em;
@@ -459,8 +495,10 @@ footer p {
 	display: grid;
 	grid-gap: 2em;
 	padding: 1em;
+	height: 60px;
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 10%;
 	grid-template-areas:
 	     'end1 end2 end3';
 		
@@ -862,10 +900,10 @@ body, html {
     .bg-img {
         /* The image used */
        
-	   
+	   /*
 	   background-image: url(../images/abackgroundixlogo.jpg);
 	   width: auto;
-        height: 100%;
+        height: 100%; */
         /* Center and scale the image nicely 
   background-position: center;
   background-repeat: no-repeat;
@@ -946,14 +984,14 @@ body, html {
     .bg-img {
         /* The image used */
        
-	   
+	   /*
 	   background-image: url(../images/abackgroundixlogo.jpg);
 	   width: auto;
-        height: 100%;
+        height: 100%; */
         /* Center and scale the image nicely */
-  background-position: center;
+  /*background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   
     }
 	
@@ -988,14 +1026,17 @@ body, html {
      .bg-img {
         /* The image used */
        
-	   
+	/*   
 	   background-image: url(../images/abackgroundixlogo.jpg);
 	   width: auto;
         height: 100%;
         /* Center and scale the image nicely */
+		/*
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
  
     }
+	
 }
+*/
